@@ -13,13 +13,11 @@ let timeToBuy = {
                             var text = "";
                             var cookiesRemaining = me.price - Game.cookies;
                             if (cookiesRemaining > 0) {
-
                                 var timeRemaining = cookiesRemaining / Game.cookiesPs;
                                 var days = Math.trunc(timeRemaining / 60 / 60 / 24);
                                 var hours = Math.trunc((timeRemaining / 60 / 60) % 24);
                                 var minutes = Math.trunc((timeRemaining / 60) % 60);
                                 var seconds = timeRemaining % 60;
-                                console.log("hello?");
                                 if (days === 0) {
                                     text = `so far </div><div class=\"descriptionBlock\">You can buy this building in <b>${hours}h ${minutes}m ${seconds}s</b></div>`;
                                 } else {
